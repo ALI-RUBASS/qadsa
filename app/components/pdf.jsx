@@ -7,7 +7,11 @@ export default function PdfCard() {
   const pdfUrl = "https://transknit.shop/qadsa.pdf"; // replace with your actual PDF path
 
   return (
+<<<<<<< HEAD
     <div className="flex justify-center items-center bg-gray-900 mb-10">
+=======
+    <div className="flex justify-center items-center mb-10 px-10">
+>>>>>>> 16de5e8 (Final)
       {/* PDF Preview Card */}
       <div
         onClick={() => setIsOpen(true)}

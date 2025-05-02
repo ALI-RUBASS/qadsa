@@ -93,7 +93,11 @@ const LandingComponent = async ({ searchParams: { customUsername } }) => {
 			<div className="my-16 text-center animate-fade-in">
 				<h2 className="text-lg text-zinc-500">
 					
+<<<<<<< HEAD
 						<div className="w-full h-px min-h-28 px-20 lg:px-40">
+=======
+						<div className="w-full h-px min-h-28 px-10 lg:px-40">
+>>>>>>> 16de5e8 (Final)
 							<UserText promise={promise} />
 							{/* <ProfileOrganizations username={username} />
 							<RecentActivity username={username} /> */}

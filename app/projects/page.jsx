@@ -10,7 +10,12 @@ export default async function ProjectsPage(props) {
         customUsername
     } = searchParams;
 
+<<<<<<< HEAD
     const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
+=======
+    const username = 'qadsa123';
+    // customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
+>>>>>>> 16de5e8 (Final)
 
     return (
         <div className="relative pb-16">
