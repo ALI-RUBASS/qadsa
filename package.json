@@ -7,7 +7,7 @@
     "build": "npm run setup && next build",
     "build-only": "next build",
     "start": "next start",
-    "setup": "node ./lib/setup.mjs"
+    "setup": "node ./lib/setup.cjs"
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.4",
