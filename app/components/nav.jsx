@@ -2,7 +2,7 @@
 
 import { GoArrowLeft } from 'react-icons/go';
 import Link from "next/link";
-import { useSearchParams } from 'next/navigation';
+// import { useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from "react";
 import LoadingIndicator from './loading-indicator';
 import { FaCircle } from 'react-icons/fa';
@@ -10,8 +10,8 @@ import { FaCircle } from 'react-icons/fa';
 export const Navigation = () => {
 	const ref = useRef(null);
 	const [isIntersecting, setIntersecting] = useState(true);
-	const searchParams = useSearchParams();
-	const customUsername = searchParams.get('customUsername');
+	// const searchParams = useSearchParams();
+	const customUsername = "";
 
 	useEffect(() => {
 		if (!ref.current) return;
