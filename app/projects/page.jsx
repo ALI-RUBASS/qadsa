@@ -10,15 +10,12 @@ export default async function ProjectsPage(props) {
         customUsername
     } = searchParams;
 
-<<<<<<< HEAD
-    const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
-=======
+    // const username = customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
     const username = 'qadsa123';
     // customUsername || process.env.GITHUB_USERNAME || data.githubUsername;
->>>>>>> 16de5e8 (Final)
 
     return (
-        <div className="relative pb-16">
+        <div className="relative">
             <Navigation />
             <div className="px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-12 md:pt-24 lg:pt-32">
                 <div className="max-w-2xl mx-auto lg:mx-0">
@@ -35,6 +32,22 @@ export default async function ProjectsPage(props) {
                     <ProjectsComponent username={username} />
                 </Suspense>
             </div>
+
+
+  
+<hr className="text-white mx-5" />
+  <footer className="bg-black pb-5">
+  <div className="max-w-screen-xl px-4 pt-8 mx-auto sm:px-6 lg:px-8">
+    <div className="sm:flex sm:items-center sm:justify-between">
+      
+
+      <p className="mt-4 text-sm text-center text-gray-400 lg:text-right lg:mt-0 h-10">
+        T&C &nbsp; Career &nbsp; Privacy & Policy &nbsp; Developer
+      </p>
+    </div>
+  </div>
+</footer>
+
         </div>
     );
 }

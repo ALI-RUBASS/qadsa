@@ -3,15 +3,12 @@ import { Inter } from "next/font/google";
 import LocalFont from "next/font/local";
 import data from "../data.json";
 
-<<<<<<< HEAD
-const username = process.env.GITHUB_USERNAME || data.githubUsername;
-const displayName = data.displayName || username;
-=======
+// const username = process.env.GITHUB_USERNAME || data.githubUsername;
+// const displayName = data.displayName || username;
 const username = 'qadsa123';
 // process.env.GITHUB_USERNAME || data.githubUsername;
 const displayName = 'Qadsa Noor';
 // data.displayName || username;
->>>>>>> 16de5e8 (Final)
 
 /** @type {import('next').Metadata} */
 export const metadata = {

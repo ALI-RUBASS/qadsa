@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useSearchParams } from 'next/navigation';
 import { useEffect, useRef, useState } from "react";
 import LoadingIndicator from './loading-indicator';
+import { FaCircle } from 'react-icons/fa';
 
 export const Navigation = () => {
 	const ref = useRef(null);
@@ -45,6 +46,12 @@ export const Navigation = () => {
 						>
 							<span className="inline-flex items-center">Contact <LoadingIndicator /></span>
 						</Link>
+						<Link
+                        href={"mailto:qadsanoor.cs@gmail.com" + (customUsername ? `?customUsername=${customUsername}` : '')}
+                        className="duration-200 text-zinc-400 hover:text-zinc-100 relative block"
+                      >
+                        <span className="inline-flex items-center"><FaCircle className="pr-2" size={30}  /> qadsanoor.cs@gmail.com <LoadingIndicator /></span>
+                      </Link>
 					</div>
 
 					<Link

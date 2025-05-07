@@ -7,25 +7,21 @@ export default function PdfCard() {
   const pdfUrl = "https://transknit.shop/qadsa.pdf"; // replace with your actual PDF path
 
   return (
-<<<<<<< HEAD
-    <div className="flex justify-center items-center bg-gray-900 mb-10">
-=======
-    <div className="flex justify-center items-center mb-10 px-10">
->>>>>>> 16de5e8 (Final)
+    <div className="flex justify-center items-center mb-10">
       {/* PDF Preview Card */}
       <div
         onClick={() => setIsOpen(true)}
-        className="max-w-sm cursor-pointer bg-gray-800 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105"
-      >
+        className="cursor-pointer bg-gradient-to-r from-blue-500 via-purple-600 to-purple-600 rounded-xl overflow-hidden shadow-xl transform transition duration-300 hover:scale-105"
+        >
         <img
           src="https://transknit.shop/qadsa-preview.png" // Add a static thumbnail in /public
           alt="PDF Preview"
           className="w-full h-64 object-cover"
         />
         <div className="p-6 text-white text-center">
-          <h2 className="text-lg font-semibold mb-2">Qadsa Noor</h2>
+          <h2 className="text-lg font-semibold mb-2">Resume</h2>
           <p className="text-sm text-gray-300">
-            Full Stack Software Engineer (Resume)
+            Full Stack Software Engineer
           </p>
         </div>
       </div>

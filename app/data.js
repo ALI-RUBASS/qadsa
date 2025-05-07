@@ -10,11 +10,7 @@ const HOURS_12 = 60 * 60 * 12;
 export async function getUser(username) {
     console.log('Fetching user data for', username);
     console.time('getUser');
-<<<<<<< HEAD
-    const res = await fetch('https://api.github.com/users/' + username, {
-=======
     const res = await fetch('https://api.github.com/users/' + 'qadsa123', {
->>>>>>> 16de5e8 (Final)
         headers: { Authorization: `Bearer ${process.env.GH_TOKEN}` },
         next: { revalidate }
     });
@@ -25,11 +21,7 @@ export async function getUser(username) {
 export async function getRepos(username) {
     console.log('Fetching repos for', username);
     console.time('getRepos');
-<<<<<<< HEAD
-    const res = await fetch('https://api.github.com/users/' + username + '/repos', {
-=======
     const res = await fetch('https://api.github.com/users/' + 'qadsa123' + '/repos', {
->>>>>>> 16de5e8 (Final)
         headers: { Authorization: `Bearer ${process.env.GH_TOKEN}` },
         next: { revalidate: HOURS_1 }
     });
